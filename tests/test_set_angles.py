@@ -25,8 +25,8 @@ def test():
         exit(1)
     cam.requestHardwareID() # Important to get the angles limits defined in cameras.py
     sleep(1)
-    target_yaw_deg = 130.5
-    target_pitch_deg = 25.0
+    target_yaw_deg = 0.5
+    target_pitch_deg = -10.0
     cam.requestSetAngles(target_yaw_deg, target_pitch_deg)
     print("Attitude (yaw,pitch,roll) eg:", cam.getAttitude())
 
